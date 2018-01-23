@@ -4,13 +4,13 @@ def get_first_name_of_season_winner(data, season)
     if season_num == season
       people_array.each do |stats|
         if stats[:status] == "Winner"
-          return stats[:name].split[0]
+          return stats[:name].split()[0]
         end
       end
     end
   end
 end
-
+           
 
 def get_contestant_name(data, occupation)
   # code here

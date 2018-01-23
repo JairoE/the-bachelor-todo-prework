@@ -40,6 +40,7 @@ def count_contestants_by_hometown(data, hometown)
       end
     end
 
+    counter
 
 end
 
@@ -49,7 +50,7 @@ def get_occupation(data, hometown)
       people_array.each do |stats|
 
         if stats["hometown"] == hometown
-          return stats["name"]
+          return stats["occupation"]
         end
       end
     end

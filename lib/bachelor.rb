@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
   data.each do |season_num, people_array|
     if season_num.to_s == season
       people_array.each do |stats|
-        binding.pry
+
         if stats["status"] == "Winner"
           return stats["name"].split()[0]
         end
